@@ -1,13 +1,143 @@
-body {
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+p{
+  margin: 0;
+}
+
+hr{
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 608px;
+}
+
+input[type=text]{
+  padding: 15px 10px;
+  border-radius: 10px;
+  width: 73%;
+  border: 1px solid #BDBDBD;
+}
+
+input[type=text]:focus{
+  border: 1px solid #585858;
+}
+
+input[type=checkbox]{
+  width: 20px;
+  height: 20px;
+}
+
+input[type=radio]{
+  display: none;
+}
+
+button{
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.btn{
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  background-color: #2F80ED;
+  width: 20%;
+}
+
+.btn:hover{
+  color: white;
+  background-color: #2768bd;
+  cursor: pointer;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.tab{
+  margin: 20px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 608px;
+}
+
+.input-container{
+  display: flex;
+  justify-content: space-between;
+  width: 608px;
+}
+
+.todo{
+  text-align: left;
+  margin: 20px auto;
+  width: 608px
+}
+
+.todo-item{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+}
+
+.checked{
+  text-decoration: line-through;
+}
+
+.active{
+  border-bottom: 4px solid #2F80ED;
+  text-align: center;
+  width: 89px;
+}
+.inactive{
+  border-bottom: 4px solid transparent;
+  text-align: center;
+  width: 89px;
+}
+
+.slider{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.tab button{
+  padding-bottom: 4px;
+}
+
+.completed{
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-btn{
+  background-color: #EB5757;
+  color: white;
+  border-radius: 4px;
+  width: 124px;
+  height: 40px;
+}
+
+.delete-btn:hover{
+  background-color: #c04747;
+}
+
+.flex-end{
+  display: flex;
+  justify-content: flex-end;
 }
